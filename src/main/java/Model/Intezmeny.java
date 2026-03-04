@@ -2,6 +2,8 @@ package Model;
 
 import Controller.Rendszer;
 
+//Kész
+
 public class Intezmeny {
     private String intezmenyNev;
     private String cim;

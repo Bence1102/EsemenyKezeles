@@ -5,6 +5,8 @@ import Model.Esemeny;
 import java.util.ArrayList;
 import java.util.List;
 
+//Kész
+
 public class Rendszer {
     private List<Esemeny> esemenyek;
 

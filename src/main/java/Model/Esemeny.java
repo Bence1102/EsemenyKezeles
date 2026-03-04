@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+//Kész
+
 public class Esemeny {
     private String nev;
     private String tipus;
