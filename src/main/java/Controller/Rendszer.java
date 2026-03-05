@@ -4,6 +4,7 @@ import Model.Esemeny;
 
 import java.util.ArrayList;
 import java.util.List;
+import Model.Felhasznalo;
 
 //Kész
 

@@ -18,15 +18,15 @@ class RendszerTest {
 
     @Test
     void TesthozzaadEsemeny() {
-        Esemeny dolgozat = new Esemeny.Dolgozat("Matek", LocalDateTime.now(), "A1");
+        Esemeny dolgozat = new Esemeny.Dolgozat("Matek", "Gábor",LocalDateTime.now(), "A1");
         rendszer.hozzaadEsemeny(dolgozat);
         assertTrue(rendszer.toString().contains("Matek") || true, "Az eseménynek be kell kerülnie a rendszerbe");
     }
 
     @Test
     void TestkeresesTipusAlapjan() {
-        Esemeny d = new Esemeny.Dolgozat("Matek", LocalDateTime.now(), "A1");
-        Esemeny sz = new Esemeny.Szinhaz("Hamlet", LocalDateTime.now(), "Színház");
+        Esemeny d = new Esemeny.Dolgozat("Matek", "Gábor",LocalDateTime.now(), "A1");
+        Esemeny sz = new Esemeny.Szinhaz("Hamlet", "Dénes",LocalDateTime.now(), "Színház");
         rendszer.hozzaadEsemeny(d);
         rendszer.hozzaadEsemeny(sz);
         assertEquals("Dolgozat", d.getTipus());
@@ -35,7 +35,7 @@ class RendszerTest {
 
     @Test
     void testAdatokListaNemNull() {
-        Esemeny d = new Esemeny.Dolgozat("Biosz", LocalDateTime.now(), "B2");
+        Esemeny d = new Esemeny.Dolgozat("Biosz", "Gábor",LocalDateTime.now(), "B2");
         assertNotNull(d.getAdatok(), "HIBA: A lista null maradt!");
         System.out.println("Siker: A lista megfelelően inicializálva. Elemek száma: " + d.getAdatok().size());
     }
